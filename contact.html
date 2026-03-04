@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Van de Werken Auto's Ravenstein & Herpen</title>
+  <meta name="description" content="Neem contact op met Van de Werken Auto's. Filialen in Ravenstein en Herpen. Ma-Vr 08:00-18:00, Za 09:00-17:00. Bel, mail of kom langs!">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#b60606', 'primary-dark': '#8a0505', secondary: '#1a1a1a' },
+        fontFamily: { display: ['Bebas Neue','sans-serif'], body: ['Source Sans 3','sans-serif'] },
+      }}
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="40ad838b-dae8-4e62-90f6-bea8e5c50c12"></script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Bebas Neue', sans-serif; }
+    .scroll-reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease-out, transform .6s ease-out; }
+    .scroll-reveal.revealed { opacity:1; transform:translateY(0); }
+    @media (prefers-reduced-motion:reduce) { .scroll-reveal { opacity:1; transform:none; transition:none; } }
+  </style>
+</head>
+<body class="bg-white text-secondary">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-secondary/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="font-display text-white text-2xl md:text-3xl tracking-wide cursor-pointer">VAN DE WERKEN AUTO'S</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Home</a>
+          <a href="werkplaats.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Werkplaats</a>
+          <a href="service.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Service</a>
+          <a href="contact.html" class="bg-primary text-white px-5 py-2 rounded-md cursor-pointer font-semibold">Contact</a>
+        </div>
+        <button id="menuBtn" class="md:hidden text-white cursor-pointer" aria-label="Menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block text-white py-2 cursor-pointer">Home</a>
+        <a href="werkplaats.html" class="block text-white py-2 cursor-pointer">Werkplaats</a>
+        <a href="service.html" class="block text-white py-2 cursor-pointer">Service</a>
+        <a href="contact.html" class="block text-primary py-2 cursor-pointer">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-20 md:pt-24">
+    <div class="relative h-64 md:h-80 overflow-hidden">
+      <img src="images/contact-header.jpg" alt="Contact Van de Werken Auto's" class="w-full h-full object-cover" loading="eager">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="font-display text-5xl md:text-7xl text-white tracking-wider">CONTACT</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filialen -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Twan -->
+        <div class="bg-white rounded-lg shadow-md p-8 scroll-reveal">
+          <h3 class="font-display text-2xl text-secondary tracking-wide mb-4">TWAN VAN DE WERKEN AUTO'S</h3>
+          <p class="text-gray-500 text-sm font-medium mb-3">Occasion dealer Ravenstein</p>
+          <div class="space-y-2 text-gray-600">
+            <p class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              't Kolkske 12<br>5371 MX Ravenstein
+            </p>
+            <p class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:0630453606" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-30453606</a>
+            </p>
+            <p class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:verkoop@vandewerkenautos.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer text-sm">verkoop@vandewerkenautos.nl</a>
+            </p>
+          </div>
+        </div>
+        <!-- Mark -->
+        <div class="bg-white rounded-lg shadow-md p-8 scroll-reveal" style="transition-delay:.15s">
+          <h3 class="font-display text-2xl text-secondary tracking-wide mb-4">VAN DE WERKEN AUTO'S</h3>
+          <p class="text-gray-500 text-sm font-medium mb-3">Auto reparatie / onderhoud</p>
+          <div class="space-y-2 text-gray-600">
+            <p class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              't Kolkske 11<br>5371 MX Ravenstein
+            </p>
+            <p class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:0646375520" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-46375520</a>
+            </p>
+            <p class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:werkplaats@vandewerkenautos.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer text-sm">werkplaats@vandewerkenautos.nl</a>
+            </p>
+          </div>
+        </div>
+        <!-- Tonny -->
+        <div class="bg-white rounded-lg shadow-md p-8 scroll-reveal" style="transition-delay:.3s">
+          <h3 class="font-display text-2xl text-secondary tracking-wide mb-4">TONNY VAN DE WERKEN AUTO'S</h3>
+          <p class="text-gray-500 text-sm font-medium mb-3">Occasion dealer Herpen</p>
+          <div class="space-y-2 text-gray-600">
+            <p class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Berghemseweg 1<br>5373 KG Herpen
+            </p>
+            <p class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <a href="tel:0653236028" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-53236028</a>
+            </p>
+            <p class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:vandewerkenautos@hetnet.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer text-sm">vandewerkenautos@hetnet.nl</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.6852328833133!2d5.63991511594895!3d51.7936388796832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c70224f5cfe0ef%3A0xe380c12e0ea62d5e!2sVan+De+Werken+Auto's!5e0!3m2!1snl!2snl!4v1534873551921" width="100%" height="350" style="border:0" allowfullscreen loading="lazy" title="Locatie"></iframe>
+  </section>
+
+  <!-- Openingstijden + Social + Formulier -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Links: Openingstijden + Social -->
+        <div>
+          <div class="bg-primary rounded-lg p-8 text-white mb-8 scroll-reveal">
+            <h2 class="font-display text-3xl tracking-wide mb-4">OPENINGSTIJDEN</h2>
+            <div class="space-y-2 text-white/90">
+              <div class="flex justify-between"><span>Maandag - Vrijdag</span><span>08:00 – 18:00</span></div>
+              <div class="flex justify-between"><span>Zaterdag</span><span>09:00 – 17:00</span></div>
+              <div class="flex justify-between"><span>Zondag</span><span>Gesloten</span></div>
+            </div>
+            <p class="text-white/70 text-sm mt-4">Daarnaast kunt u op afspraak op andere tijden bij ons terecht.</p>
+          </div>
+          <div class="scroll-reveal" style="transition-delay:.2s">
+            <h3 class="font-display text-2xl text-secondary tracking-wide mb-4">VOLG ONS OP FACEBOOK!</h3>
+            <a href="https://www.facebook.com/vandewerkenauto/" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-primary hover:text-primary-dark font-semibold text-lg transition-colors duration-300 cursor-pointer">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Van de Werken Auto's op Facebook
+            </a>
+          </div>
+        </div>
+        <!-- Rechts: Formulier -->
+        <div class="scroll-reveal" style="transition-delay:.15s">
+          <h2 class="font-display text-3xl text-secondary tracking-wide mb-6">CONTACTFORMULIER</h2>
+          <form action="mailto:verkoop@vandewerkenautos.nl" method="post" enctype="text/plain" class="space-y-4">
+            <div>
+              <label for="naam" class="block text-sm font-medium text-gray-700 mb-1">Naam *</label>
+              <input type="text" id="naam" name="naam" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors duration-300">
+            </div>
+            <div>
+              <label for="telefoon" class="block text-sm font-medium text-gray-700 mb-1">Telefoonnummer</label>
+              <input type="tel" id="telefoon" name="telefoon" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors duration-300">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+              <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors duration-300">
+            </div>
+            <div>
+              <label for="onderwerp" class="block text-sm font-medium text-gray-700 mb-1">Onderwerp</label>
+              <select id="onderwerp" name="onderwerp" class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors duration-300 cursor-pointer">
+                <option value="">Kies een onderwerp...</option>
+                <option value="occasions">Occasions / Verkoop</option>
+                <option value="werkplaats">Werkplaats / Reparatie</option>
+                <option value="apk">APK</option>
+                <option value="financiering">Financiering</option>
+                <option value="overig">Overig</option>
+              </select>
+            </div>
+            <div>
+              <label for="bericht" class="block text-sm font-medium text-gray-700 mb-1">Uw bericht *</label>
+              <textarea id="bericht" name="bericht" rows="5" required class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors duration-300 resize-vertical"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white py-4 rounded-md font-semibold text-lg transition-colors duration-300 cursor-pointer">Verstuur bericht</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-display text-2xl tracking-wide mb-4">VAN DE WERKEN AUTO'S</h3>
+          <p class="text-white/60 text-sm">Familiebedrijf voor verkoop én onderhoud.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">DIENSTEN</h4>
+          <a href="werkplaats.html" class="block text-white/60 hover:text-primary text-sm mb-1 transition-colors duration-300 cursor-pointer">Werkplaats</a>
+          <a href="service.html" class="block text-white/60 hover:text-primary text-sm mb-1 transition-colors duration-300 cursor-pointer">Service</a>
+          <a href="contact.html" class="block text-white/60 hover:text-primary text-sm transition-colors duration-300 cursor-pointer">Contact</a>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">CONTACT</h4>
+          <p class="text-white/60 text-sm">Twan: <a href="tel:0630453606" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-30453606</a></p>
+          <p class="text-white/60 text-sm">Mark: <a href="tel:0646375520" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-46375520</a></p>
+          <p class="text-white/60 text-sm">Tonny: <a href="tel:0653236028" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-53236028</a></p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">OPENINGSTIJDEN</h4>
+          <p class="text-white/60 text-sm">Ma - Vr: 08:00 – 18:00</p>
+          <p class="text-white/60 text-sm">Zaterdag: 09:00 – 17:00</p>
+          <p class="text-white/60 text-sm">Zondag: Gesloten</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/40 text-sm">&copy; 2026 Van de Werken Auto's</p>
+        <p class="text-white/40 text-sm">Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>{document.getElementById('mobileMenu').classList.toggle('hidden')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('revealed');observer.unobserve(el.target)}})},{threshold:.1});
+    document.querySelectorAll('.scroll-reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>

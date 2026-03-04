@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Werkplaats | Onderhoud en reparatie | Van de Werken Auto's</title>
+  <meta name="description" content="Onderhoud en reparatie aan alle merken. APK, bandenservice, airco onderhoud, ruitservice. Ook voor campers en bedrijfswagens. Gratis leenauto!">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#b60606', 'primary-dark': '#8a0505', secondary: '#1a1a1a' },
+        fontFamily: { display: ['Bebas Neue','sans-serif'], body: ['Source Sans 3','sans-serif'] },
+      }}
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="40ad838b-dae8-4e62-90f6-bea8e5c50c12"></script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Bebas Neue', sans-serif; }
+    .scroll-reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease-out, transform .6s ease-out; }
+    .scroll-reveal.revealed { opacity:1; transform:translateY(0); }
+    @media (prefers-reduced-motion:reduce) { .scroll-reveal { opacity:1; transform:none; transition:none; } }
+  </style>
+</head>
+<body class="bg-white text-secondary">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-secondary/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="font-display text-white text-2xl md:text-3xl tracking-wide cursor-pointer">VAN DE WERKEN AUTO'S</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Home</a>
+          <a href="werkplaats.html" class="text-primary font-medium cursor-pointer">Werkplaats</a>
+          <a href="service.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Service</a>
+          <a href="contact.html" class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-md transition-colors duration-300 cursor-pointer font-semibold">Contact</a>
+        </div>
+        <button id="menuBtn" class="md:hidden text-white cursor-pointer" aria-label="Menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block text-white py-2 cursor-pointer">Home</a>
+        <a href="werkplaats.html" class="block text-primary py-2 cursor-pointer">Werkplaats</a>
+        <a href="service.html" class="block text-white py-2 cursor-pointer">Service</a>
+        <a href="contact.html" class="block bg-primary text-white text-center py-3 rounded-md cursor-pointer">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="relative pt-20 md:pt-24">
+    <div class="relative h-64 md:h-96 overflow-hidden">
+      <img src="images/werkplaats.jpg" alt="Werkplaats Van de Werken Auto's" class="w-full h-full object-cover" loading="eager">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="font-display text-5xl md:text-7xl text-white tracking-wider">WERKPLAATS</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">ONDERHOUD AUTO'S, BEDRIJFSWAGENS EN CAMPERS!</h2>
+      <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.1s">Bij Van de Werken Auto's kunt u ook terecht voor onderhoud en reparatie van uw auto, bedrijfswagen of camper. Wij voeren onderhoud en reparaties uit aan alle merken.</p>
+      <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.2s">Goed onderhoud van uw auto zorgt ervoor dat u veilig op pad gaat. Daarnaast zorgt het ervoor dat de auto zijn waarde langer behoudt.</p>
+      <p class="text-gray-600 text-lg leading-relaxed font-medium scroll-reveal" style="transition-delay:.3s">Onze monteurs hebben alle kennis in huis van alle voorkomende automerken — van verbrandingsmotor tot hybride of elektrische auto!</p>
+    </div>
+  </section>
+
+  <!-- Diensten Grid -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="scroll-reveal">
+          <img src="images/garage-interieur.jpg" alt="Werkplaats interieur" class="rounded-lg shadow-lg w-full" loading="lazy">
+        </div>
+        <div>
+          <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">U KUNT BIJ ONS O.A. TERECHT VOOR:</h2>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 scroll-reveal"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Groot en klein onderhoud</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.05s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">APK</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.1s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Bandenservice + opslag</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.15s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Ruitservice</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.2s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Airco onderhoud</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.25s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Technisch uitlezen van uw auto</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.3s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Schades / bemiddeling en reparatie</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.35s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Monteren van accessoires</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.4s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Camper onderhoud</span></li>
+            <li class="flex items-start gap-3 scroll-reveal" style="transition-delay:.45s"><svg class="w-5 h-5 text-primary mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600 text-lg">Bedrijfswagen onderhoud</span></li>
+          </ul>
+          <p class="text-gray-700 text-lg italic mt-6 scroll-reveal">Dus eigenlijk alle voorkomende reparaties en onderhoud voor uw auto!</p>
+          <a href="contact.html" class="inline-block mt-6 bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-md transition-colors duration-300 cursor-pointer font-semibold scroll-reveal">Neem contact op met onze werkplaats</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leenauto -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 text-center md:text-left">
+          <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">MAAK GEBRUIK VAN ONZE (GRATIS) LEENAUTO!</h2>
+          <p class="text-gray-600 text-lg leading-relaxed scroll-reveal" style="transition-delay:.15s">Kunt u uw auto eigenlijk niet missen? Maak dan gebruik van onze leenauto's. In veel gevallen is deze service gratis beschikbaar! Vraag onze monteurs voor meer informatie.</p>
+        </div>
+        <div class="order-1 md:order-2 scroll-reveal">
+          <img src="images/leenauto.jpg" alt="Leenauto Van de Werken" class="rounded-lg shadow-lg w-full" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Airco -->
+  <section class="py-16 md:py-20 bg-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="scroll-reveal">
+          <img src="images/google_place_4.jpg" alt="Airco onderhoud" class="rounded-lg shadow-lg w-full" loading="lazy">
+        </div>
+        <div>
+          <h2 class="font-display text-3xl md:text-4xl tracking-wide mb-6 scroll-reveal">AIRCO ONDERHOUD</h2>
+          <p class="text-white/80 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.1s">Onderhoud aan het aircosysteem is belangrijk voor een optimale werking en levensduur.</p>
+          <p class="text-white/80 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.2s">Schimmels en bacteriën kunnen zich nestelen in het aircosysteem en komen vervolgens in het filter waardoor ze in uw auto terecht kunnen komen. Ook voorkomt u dure reparaties op lange termijn.</p>
+          <p class="text-xl font-semibold text-primary scroll-reveal" style="transition-delay:.3s">Een Airco Check is bij ons altijd GRATIS!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trekhaken -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 items-center">
+        <div class="md:col-span-2">
+          <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">OFFICIEEL MONTAGEADRES TREKHAKEN.NL</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.1s">Wij zijn hét officiële montageadres voor uw trekhaak in de regio. In samenwerking met Trekhaken.nl leveren wij de goedkoopste trekhaken van Nederland!</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.2s">Voor ieder type auto monteren wij vakkundig de door u gewenste trekhaak en draadbundel. Ook zorgen wij bij de nieuwere type auto voor het aanmelden van de trekhaak in de computer/systeem van de auto.</p>
+          <p class="text-gray-600 text-lg leading-relaxed scroll-reveal" style="transition-delay:.3s">Alle voorkomende trekhaken zijn vrijwel allemaal leverbaar binnen 24 uur door de grote voorraad van Trekhaken.nl</p>
+        </div>
+        <div class="flex justify-center scroll-reveal">
+          <img src="images/trekhaken-logo.png" alt="Trekhaken.nl officieel montageadres" class="max-w-[200px]" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Banner -->
+  <section class="bg-primary py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="font-display text-3xl md:text-4xl text-white tracking-wider scroll-reveal">PERSOONLIJK CONTACT, KWALITEIT EN EERLIJK ADVIES!</h3>
+    </div>
+  </section>
+
+  <!-- Streetview -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-3xl md:text-4xl text-center text-secondary tracking-wide mb-8 scroll-reveal">NEEM EEN KIJKJE IN ONZE WERKPLAATS</h2>
+      <div class="rounded-lg overflow-hidden shadow-lg scroll-reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1534884282326!6m8!1m7!1sCAoSLEFGMVFpcE55blBvWE9ScFRpRmw2LWJ3WHg1bjUzblY2S3FZQXM2Rm41cmY2!2m2!1d51.79353213!2d5.64208232!3f214.5!4f2.933869999999999!5f0.7820865974627469" width="100%" height="450" style="border:0" allowfullscreen loading="lazy" title="Streetview werkplaats"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-white tracking-wide mb-4 scroll-reveal">AFSPRAAK MAKEN?</h2>
+      <p class="text-white/80 text-lg mb-8 scroll-reveal" style="transition-delay:.15s">Neem contact op voor een afspraak of meer informatie over onze werkplaats.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal" style="transition-delay:.3s">
+        <a href="tel:0646375520" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-md text-lg font-semibold transition-colors duration-300 cursor-pointer">Bel Mark: 06-46375520</a>
+        <a href="contact.html" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 cursor-pointer">Contactformulier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-display text-2xl tracking-wide mb-4">VAN DE WERKEN AUTO'S</h3>
+          <p class="text-white/60 text-sm">Familiebedrijf voor verkoop én onderhoud van personenauto's en bedrijfsauto's.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">DIENSTEN</h4>
+          <a href="werkplaats.html" class="block text-white/60 hover:text-primary text-sm mb-1 transition-colors duration-300 cursor-pointer">Werkplaats</a>
+          <a href="service.html" class="block text-white/60 hover:text-primary text-sm mb-1 transition-colors duration-300 cursor-pointer">Service</a>
+          <a href="contact.html" class="block text-white/60 hover:text-primary text-sm transition-colors duration-300 cursor-pointer">Contact</a>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">CONTACT</h4>
+          <p class="text-white/60 text-sm">Twan: <a href="tel:0630453606" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-30453606</a></p>
+          <p class="text-white/60 text-sm">Mark: <a href="tel:0646375520" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-46375520</a></p>
+          <p class="text-white/60 text-sm mt-2"><a href="mailto:werkplaats@vandewerkenautos.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer">werkplaats@vandewerkenautos.nl</a></p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">OPENINGSTIJDEN</h4>
+          <p class="text-white/60 text-sm">Ma - Vr: 08:00 – 18:00</p>
+          <p class="text-white/60 text-sm">Zaterdag: 09:00 – 17:00</p>
+          <p class="text-white/60 text-sm">Zondag: Gesloten</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/40 text-sm">&copy; 2026 Van de Werken Auto's</p>
+        <p class="text-white/40 text-sm">Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>{document.getElementById('mobileMenu').classList.toggle('hidden')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('revealed');observer.unobserve(el.target)}})},{threshold:.1});
+    document.querySelectorAll('.scroll-reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service | Garantie, Financiering & Verzekering | Van de Werken Auto's</title>
+  <meta name="description" content="Garantie via Autotrust, financiering via De Autofinancier en verzekering via RijVerzekerd. Alles geregeld bij Van de Werken Auto's.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { primary: '#b60606', 'primary-dark': '#8a0505', secondary: '#1a1a1a' },
+        fontFamily: { display: ['Bebas Neue','sans-serif'], body: ['Source Sans 3','sans-serif'] },
+      }}
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="40ad838b-dae8-4e62-90f6-bea8e5c50c12"></script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1,h2,h3,h4,h5,h6 { font-family: 'Bebas Neue', sans-serif; }
+    .scroll-reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease-out, transform .6s ease-out; }
+    .scroll-reveal.revealed { opacity:1; transform:translateY(0); }
+    @media (prefers-reduced-motion:reduce) { .scroll-reveal { opacity:1; transform:none; transition:none; } }
+  </style>
+</head>
+<body class="bg-white text-secondary">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-secondary/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="font-display text-white text-2xl md:text-3xl tracking-wide cursor-pointer">VAN DE WERKEN AUTO'S</a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Home</a>
+          <a href="werkplaats.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Werkplaats</a>
+          <a href="service.html" class="text-primary font-medium cursor-pointer">Service</a>
+          <a href="contact.html" class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-md transition-colors duration-300 cursor-pointer font-semibold">Contact</a>
+        </div>
+        <button id="menuBtn" class="md:hidden text-white cursor-pointer" aria-label="Menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block text-white py-2 cursor-pointer">Home</a>
+        <a href="werkplaats.html" class="block text-white py-2 cursor-pointer">Werkplaats</a>
+        <a href="service.html" class="block text-primary py-2 cursor-pointer">Service</a>
+        <a href="contact.html" class="block bg-primary text-white text-center py-3 rounded-md cursor-pointer">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-20 md:pt-24">
+    <div class="relative h-64 md:h-96 overflow-hidden">
+      <img src="images/onderhoud-auto.jpg" alt="Service Van de Werken Auto's" class="w-full h-full object-cover" loading="eager">
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="font-display text-5xl md:text-7xl text-white tracking-wider">SERVICE</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Garantie -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 items-center">
+        <div class="md:col-span-2">
+          <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">GARANTIE</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.1s">Een tweedehands auto kopen met garantie? Dat is bij ons geen enkel probleem. Wij bieden diverse mogelijkheden voor garantie. Deze garantie loopt via Autotrust.</p>
+          <p class="text-gray-600 text-lg leading-relaxed scroll-reveal" style="transition-delay:.2s">Informeer naar de mogelijkheden.</p>
+        </div>
+        <div class="flex justify-center scroll-reveal">
+          <a href="https://www.autotrust.nl/" target="_blank" rel="noopener" class="cursor-pointer hover:opacity-80 transition-opacity duration-300">
+            <img src="images/autotrust.png" alt="Autotrust garantie" class="max-w-[200px]" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verzekering -->
+  <section class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 items-center">
+        <div class="flex justify-center order-2 md:order-1 scroll-reveal">
+          <a href="http://www.ikrijverzekerd.nl/" target="_blank" rel="noopener" class="cursor-pointer hover:opacity-80 transition-opacity duration-300">
+            <img src="images/rijverzekerd.png" alt="RijVerzekerd verzekering" class="max-w-[250px]" loading="lazy">
+          </a>
+        </div>
+        <div class="md:col-span-2 order-1 md:order-2">
+          <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">VERZEKERING</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.1s">Optimale zekerheid is zo geregeld!</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6 scroll-reveal" style="transition-delay:.2s">Van de Werken Auto's werkt voor verzekeringen samen met RijVerzekerd.</p>
+          <a href="http://www.ikrijverzekerd.nl/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors duration-300 cursor-pointer scroll-reveal" style="transition-delay:.3s">
+            Vraag direct een offerte aan bij RijVerzekerd
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financiering -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-12 items-center">
+        <div class="md:col-span-2">
+          <h2 class="font-display text-3xl md:text-4xl text-secondary tracking-wide mb-6 scroll-reveal">FINANCIERING</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-4 scroll-reveal" style="transition-delay:.1s">Een tweedehands auto kopen met een financiering? Geen probleem! Door de samenwerking met meerdere geldverstrekkers slaagt De Autofinancier er vrijwel altijd in om voor u een passende aanbieding te vinden.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6 scroll-reveal" style="transition-delay:.2s">De Autofinancier zoekt voor u een geldverstrekker die de beste leenvoorwaarden en een aantrekkelijke rente voor u heeft.</p>
+          <a href="https://www.deautofinancier.nl/van-de-werken-autos/home" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors duration-300 cursor-pointer scroll-reveal" style="transition-delay:.3s">
+            Meer informatie over financiering
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </a>
+        </div>
+        <div class="flex justify-center scroll-reveal">
+          <a href="https://www.deautofinancier.nl/van-de-werken-autos/home" target="_blank" rel="noopener" class="cursor-pointer hover:opacity-80 transition-opacity duration-300">
+            <img src="images/autofinancier.png" alt="De Autofinancier" class="max-w-[250px]" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-white tracking-wide mb-4 scroll-reveal">VRAGEN OVER ONZE SERVICE?</h2>
+      <p class="text-white/80 text-lg mb-8 scroll-reveal" style="transition-delay:.15s">Neem contact op — wij informeren u graag over garantie, financiering en verzekering.</p>
+      <a href="contact.html" class="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-md text-lg font-semibold transition-colors duration-300 cursor-pointer scroll-reveal" style="transition-delay:.3s">Contact Opnemen</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-display text-2xl tracking-wide mb-4">VAN DE WERKEN AUTO'S</h3>
+          <p class="text-white/60 text-sm">Familiebedrijf voor verkoop én onderhoud.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">DIENSTEN</h4>
+          <a href="werkplaats.html" class="block text-white/60 hover:text-primary text-sm mb-1 transition-colors duration-300 cursor-pointer">Werkplaats</a>
+          <a href="service.html" class="block text-white/60 hover:text-primary text-sm mb-1 transition-colors duration-300 cursor-pointer">Service</a>
+          <a href="contact.html" class="block text-white/60 hover:text-primary text-sm transition-colors duration-300 cursor-pointer">Contact</a>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">CONTACT</h4>
+          <p class="text-white/60 text-sm">Twan: <a href="tel:0630453606" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-30453606</a></p>
+          <p class="text-white/60 text-sm">Mark: <a href="tel:0646375520" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-46375520</a></p>
+          <p class="text-white/60 text-sm mt-2"><a href="mailto:verkoop@vandewerkenautos.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer">verkoop@vandewerkenautos.nl</a></p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">OPENINGSTIJDEN</h4>
+          <p class="text-white/60 text-sm">Ma - Vr: 08:00 – 18:00</p>
+          <p class="text-white/60 text-sm">Zaterdag: 09:00 – 17:00</p>
+          <p class="text-white/60 text-sm">Zondag: Gesloten</p>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/40 text-sm">&copy; 2026 Van de Werken Auto's</p>
+        <p class="text-white/40 text-sm">Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click',()=>{document.getElementById('mobileMenu').classList.toggle('hidden')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting){el.target.classList.add('revealed');observer.unobserve(el.target)}})},{threshold:.1});
+    document.querySelectorAll('.scroll-reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>

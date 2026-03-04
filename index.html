@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Van de Werken Auto's Ravenstein | Verkoop & Onderhoud</title>
+  <meta name="description" content="Van de Werken Auto's — familiebedrijf in Ravenstein & Herpen. Verkoop én onderhoud van personenauto's en bedrijfsauto's. ⭐ 4.8/5 op Google.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#b60606',
+            'primary-dark': '#8a0505',
+            secondary: '#1a1a1a',
+            accent: '#e8e8e8',
+          },
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            body: ['Source Sans 3', 'sans-serif'],
+          },
+          animation: {
+            'fade-up': 'fadeUp 0.6s ease-out forwards',
+            'fade-in': 'fadeIn 0.6s ease-out forwards',
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="40ad838b-dae8-4e62-90f6-bea8e5c50c12"></script>
+  <style>
+    body { font-family: 'Source Sans 3', sans-serif; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Bebas Neue', sans-serif; }
+    .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .scroll-reveal.revealed { opacity: 1; transform: translateY(0); }
+    .hero-parallax { will-change: transform; }
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-white text-secondary">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-secondary/95 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <a href="index.html" class="font-display text-white text-2xl md:text-3xl tracking-wide cursor-pointer">VAN DE WERKEN AUTO'S</a>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Home</a>
+          <a href="werkplaats.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Werkplaats</a>
+          <a href="service.html" class="text-white hover:text-primary transition-colors duration-300 cursor-pointer font-medium">Service</a>
+          <a href="contact.html" class="bg-primary hover:bg-primary-dark text-white px-5 py-2 rounded-md transition-colors duration-300 cursor-pointer font-semibold">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="md:hidden text-white cursor-pointer" aria-label="Menu openen">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-secondary border-t border-white/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="index.html" class="block text-white hover:text-primary transition-colors duration-300 cursor-pointer py-2">Home</a>
+        <a href="werkplaats.html" class="block text-white hover:text-primary transition-colors duration-300 cursor-pointer py-2">Werkplaats</a>
+        <a href="service.html" class="block text-white hover:text-primary transition-colors duration-300 cursor-pointer py-2">Service</a>
+        <a href="contact.html" class="block bg-primary text-white text-center py-3 rounded-md cursor-pointer font-semibold">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="images/autogarage-ravenstein.jpg" alt="Van de Werken Auto's garage in Ravenstein" class="w-full h-full object-cover hero-parallax" loading="eager">
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl">
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-white tracking-wider mb-4 scroll-reveal">WELKOM BIJ<br>VAN DE WERKEN AUTO'S</h1>
+      <p class="text-white/90 text-lg md:text-xl lg:text-2xl font-light mb-8 scroll-reveal" style="transition-delay:0.2s">Occasion verkoop & werkplaats — Ravenstein & Herpen</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal" style="transition-delay:0.4s">
+        <a href="werkplaats.html" class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-md text-lg font-semibold transition-colors duration-300 cursor-pointer">Onze Werkplaats</a>
+        <a href="contact.html" class="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 cursor-pointer">Contact Opnemen</a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="bg-primary py-6 md:py-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-white text-center">
+        <div class="scroll-reveal">
+          <p class="font-display text-4xl md:text-5xl">⭐ 4.8</p>
+          <p class="text-white/80 text-sm mt-1">Google Rating (141 reviews)</p>
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.1s">
+          <p class="font-display text-4xl md:text-5xl">2</p>
+          <p class="text-white/80 text-sm mt-1">Filialen</p>
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.2s">
+          <p class="font-display text-4xl md:text-5xl">Alle</p>
+          <p class="text-white/80 text-sm mt-1">Automerken</p>
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.3s">
+          <p class="font-display text-4xl md:text-5xl">NAP</p>
+          <p class="text-white/80 text-sm mt-1">Gecertificeerd</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over Ons -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="scroll-reveal">
+          <img src="images/vandewerkenautos.jpg" alt="Van de Werken Auto's terrein" class="rounded-lg shadow-lg w-full" loading="lazy">
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.2s">
+          <h2 class="font-display text-4xl md:text-5xl text-secondary tracking-wide mb-6">EEN ECHT FAMILIEBEDRIJF</h2>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">Van de Werken Auto's is een echt familiebedrijf. Vader Tonny van de Werken heeft een filiaal in Herpen, de zoons Twan en Mark runnen samen het filiaal in Ravenstein.</p>
+          <p class="text-gray-600 text-lg leading-relaxed mb-6">Wij richten ons op de verkoop én het onderhoud van personenauto's en bedrijfsauto's. Met ons continu wisselende aanbod in verschillende merken en in diverse prijsklassen hebben we voor ieder budget een passende auto.</p>
+          <p class="text-gray-600 text-lg leading-relaxed font-medium">De auto's die wij aanbieden zijn kritisch geselecteerd op type, geschiktheid, goede staat en optimale uitvoering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-4xl md:text-5xl text-center text-secondary tracking-wide mb-4 scroll-reveal">ONZE DIENSTEN</h2>
+      <p class="text-gray-500 text-center text-lg mb-12 scroll-reveal" style="transition-delay:0.1s">Persoonlijk contact, kwaliteit en eerlijk advies!</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Occasions -->
+        <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden scroll-reveal cursor-pointer group">
+          <div class="overflow-hidden">
+            <img src="images/google_place_1.jpg" alt="Occasions bij Van de Werken" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+            </div>
+            <h3 class="font-display text-2xl text-secondary tracking-wide mb-3">OCCASIONS</h3>
+            <p class="text-gray-600">Wisselend aanbod in verschillende merken en prijsklassen. Meeneemprijzen — geen aparte afleveringskosten. Alle auto's voorzien van NAP tellerrapport.</p>
+          </div>
+        </div>
+        <!-- Werkplaats -->
+        <a href="werkplaats.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden scroll-reveal cursor-pointer group" style="transition-delay:0.15s">
+          <div class="overflow-hidden">
+            <img src="images/werkplaats.jpg" alt="Werkplaats Van de Werken" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-display text-2xl text-secondary tracking-wide mb-3">WERKPLAATS</h3>
+            <p class="text-gray-600">Onderhoud en reparatie aan alle merken. APK, bandenservice, airco onderhoud, ruitservice en meer. Ook voor campers en bedrijfswagens.</p>
+          </div>
+        </a>
+        <!-- Service -->
+        <a href="service.html" class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden scroll-reveal cursor-pointer group" style="transition-delay:0.3s">
+          <div class="overflow-hidden">
+            <img src="images/google_place_2.jpg" alt="Service Van de Werken" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-display text-2xl text-secondary tracking-wide mb-3">SERVICE</h3>
+            <p class="text-gray-600">Garantie via Autotrust, financiering via De Autofinancier en verzekering via RijVerzekerd. Alles onder één dak geregeld.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP's -->
+  <section class="py-16 md:py-20 bg-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="scroll-reveal">
+          <img src="images/occasions.jpg" alt="Occasions meeneemprijzen" class="w-20 h-20 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="font-display text-2xl tracking-wide mb-3">MEENEEMPRIJZEN</h3>
+          <p class="text-white/70">Geen aparte afleveringskosten indien de auto zo wordt meegenomen. Optioneel diverse afleverpakketten.</p>
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.15s">
+          <img src="images/inruil.jpg" alt="Auto inruilen" class="w-20 h-20 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="font-display text-2xl tracking-wide mb-3">INRUIL & FINANCIERING</h3>
+          <p class="text-white/70">Uw huidige auto gunstig inruilen. Financiering mogelijk. Informeer naar de mogelijkheden!</p>
+        </div>
+        <div class="scroll-reveal" style="transition-delay:0.3s">
+          <img src="images/nap-autopas.jpg" alt="NAP Autopas" class="w-20 h-20 object-cover rounded-full mx-auto mb-4" loading="lazy">
+          <h3 class="font-display text-2xl tracking-wide mb-3">NAP TELLERRAPPORT</h3>
+          <p class="text-white/70">Al onze occasions zijn voorzien van een nationale autopas. Zo bent u verzekerd van een juiste km-stand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-4xl md:text-5xl text-center text-secondary tracking-wide mb-4 scroll-reveal">WAT ONZE KLANTEN ZEGGEN</h2>
+      <p class="text-center text-gray-500 text-lg mb-12 scroll-reveal" style="transition-delay:0.1s">⭐ 4.8/5 op Google — 141 reviews</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-lg p-6 scroll-reveal">
+          <div class="flex items-center mb-3">
+            <span class="text-yellow-400 text-lg">★★★★★</span>
+          </div>
+          <p class="text-gray-600 italic mb-4">"Goede service, goed advies en eerlijk! Wij komen zeker terug voor het onderhoud."</p>
+          <p class="text-secondary font-semibold">— Deveney M</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 scroll-reveal" style="transition-delay:0.15s">
+          <div class="flex items-center mb-3">
+            <span class="text-yellow-400 text-lg">★★★★★</span>
+          </div>
+          <p class="text-gray-600 italic mb-4">"Reparatie en service een dikke tien. Super tevreden met het resultaat. Klasse gedaan!"</p>
+          <p class="text-secondary font-semibold">— Kamagra Point</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 scroll-reveal" style="transition-delay:0.3s">
+          <div class="flex items-center mb-3">
+            <span class="text-yellow-400 text-lg">★★★★★</span>
+          </div>
+          <p class="text-gray-600 italic mb-4">"Snel en vakkundig een andere band erop gelegd. Ze namen alle tijd en we mochten binnen wachten. Super goede service!"</p>
+          <p class="text-secondary font-semibold">— Roos De Wit</p>
+        </div>
+      </div>
+      <div class="text-center mt-10 scroll-reveal">
+        <a href="https://maps.google.com/?cid=16393315047187033438" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold transition-colors duration-300 cursor-pointer">
+          Bekijk alle reviews op Google
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerij -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <h2 class="font-display text-4xl md:text-5xl text-center text-secondary tracking-wide mb-12 scroll-reveal">NEEM EEN KIJKJE</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="scroll-reveal overflow-hidden rounded-lg cursor-pointer group" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="images/autogarage-ravenstein.jpg" alt="Autogarage Ravenstein" class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="scroll-reveal overflow-hidden rounded-lg cursor-pointer group" style="transition-delay:0.1s" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="images/garage-interieur.jpg" alt="Werkplaats interieur" class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="scroll-reveal overflow-hidden rounded-lg cursor-pointer group" style="transition-delay:0.2s" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="images/google_place_3.jpg" alt="Van de Werken Auto's" class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="scroll-reveal overflow-hidden rounded-lg cursor-pointer group" style="transition-delay:0.1s" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="images/google_place_4.jpg" alt="Showroom" class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="scroll-reveal overflow-hidden rounded-lg cursor-pointer group" style="transition-delay:0.2s" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="images/leenauto.jpg" alt="Leenauto service" class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+        </div>
+        <div class="scroll-reveal overflow-hidden rounded-lg cursor-pointer group" style="transition-delay:0.3s" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="images/google_place_5.jpg" alt="Bedrijfsterrein" class="w-full h-48 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-4xl md:text-5xl text-white tracking-wide mb-4 scroll-reveal">INTERESSE? NEEM CONTACT OP!</h2>
+      <p class="text-white/80 text-lg mb-8 scroll-reveal" style="transition-delay:0.15s">Wij helpen u graag verder. Bel, mail of kom langs bij een van onze filialen.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal" style="transition-delay:0.3s">
+        <a href="tel:0630453606" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-md text-lg font-semibold transition-colors duration-300 cursor-pointer">Bel 06-30453606</a>
+        <a href="contact.html" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 cursor-pointer">Contactformulier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.6852328833133!2d5.63991511594895!3d51.7936388796832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c70224f5cfe0ef%3A0xe380c12e0ea62d5e!2sVan+De+Werken+Auto's!5e0!3m2!1snl!2snl!4v1534873551921" width="100%" height="350" style="border:0" allowfullscreen loading="lazy" title="Locatie Van de Werken Auto's op Google Maps"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="font-display text-2xl tracking-wide mb-4">VAN DE WERKEN AUTO'S</h3>
+          <p class="text-white/60 text-sm">Familiebedrijf voor verkoop én onderhoud van personenauto's en bedrijfsauto's.</p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">FILIAAL RAVENSTEIN</h4>
+          <p class="text-white/60 text-sm mb-1">'t Kolkske 11-12</p>
+          <p class="text-white/60 text-sm mb-3">5371 MX Ravenstein</p>
+          <p class="text-white/60 text-sm">Twan: <a href="tel:0630453606" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-30453606</a></p>
+          <p class="text-white/60 text-sm">Mark: <a href="tel:0646375520" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-46375520</a></p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">FILIAAL HERPEN</h4>
+          <p class="text-white/60 text-sm mb-1">Berghemseweg 1</p>
+          <p class="text-white/60 text-sm mb-3">5373 KG Herpen</p>
+          <p class="text-white/60 text-sm">Tonny: <a href="tel:0653236028" class="hover:text-primary transition-colors duration-300 cursor-pointer">06-53236028</a></p>
+        </div>
+        <div>
+          <h4 class="font-display text-xl tracking-wide mb-4">OPENINGSTIJDEN</h4>
+          <p class="text-white/60 text-sm">Ma - Vr: 08:00 – 18:00</p>
+          <p class="text-white/60 text-sm">Zaterdag: 09:00 – 17:00</p>
+          <p class="text-white/60 text-sm mb-4">Zondag: Gesloten</p>
+          <a href="https://www.facebook.com/vandewerkenauto/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-white/60 hover:text-primary transition-colors duration-300 cursor-pointer">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/40 text-sm">&copy; 2026 Van de Werken Auto's. Alle rechten voorbehouden.</p>
+        <p class="text-white/40 text-sm">Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-primary transition-colors duration-300 cursor-pointer">Code Lieshout</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center cursor-pointer" onclick="closeLightbox()">
+    <button class="absolute top-6 right-6 text-white text-4xl hover:text-primary transition-colors duration-300 cursor-pointer" aria-label="Sluiten">&times;</button>
+    <img id="lightboxImg" src="" alt="Vergrote foto" class="max-w-[90vw] max-h-[90vh] object-contain">
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+    // Lightbox
+    function openLightbox(src) {
+      document.getElementById('lightboxImg').src = src;
+      const lb = document.getElementById('lightbox');
+      lb.classList.remove('hidden');
+      lb.classList.add('flex');
+    }
+    function closeLightbox() {
+      const lb = document.getElementById('lightbox');
+      lb.classList.add('hidden');
+      lb.classList.remove('flex');
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+    // Parallax hero
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero-parallax');
+      if (hero) hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+    });
+  </script>
+</body>
+</html>
